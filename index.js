@@ -31,6 +31,7 @@ function newReq(title, callback) {
   request.send();
 }
 
+//funzione di chiamata request e match stringa
 function searchRB(title) {
   result.innerHTML = '';
   newReq(title, (c) => {
