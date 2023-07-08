@@ -34,7 +34,8 @@ function newReq(title, callback) {
 //funzione di chiamata request e match stringa
 function searchRB(title) {
   result.innerHTML = '';
-  newReq(title, (c) => {
+  if(title.value == 0) result.innerHTML = '';
+  else newReq(title, (c) => {
     let reg = new RegExp(title, 'i');
     c.forEach((element) => {
       if (element['titolo'].search(reg) != -1) {
