@@ -45,4 +45,4 @@ function searchRB(title) {
   });
 }
 
-casella.addEventListener('keyup', () => searchRB(casella.value));
+casella.addEventListener('input', () => searchRB(casella.value));
